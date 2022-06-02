@@ -13,3 +13,6 @@ React + Firebaseで作成した、ワークアウトを記録するためのWeb�
 
 #### 記録の編集
 ![Workout-memo-record-edit](https://user-images.githubusercontent.com/106266114/171670737-e192a4a8-45fb-478a-90b4-32135533e4f2.gif)
+
+#### 記録の削除
+![Workout-memo-record-delete](https://user-images.githubusercontent.com/106266114/171672319-a20fc7f8-feb6-4c48-b81b-bc4cf72db45c.gif)
