@@ -6,9 +6,14 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 function Record({record}) {
+  // ドキュメント(record)の日付を変換
   const date = record.date.toDate();
   const dateString = date.toLocaleDateString();
+
+  // モーダルウィンドウの表示/非表示を決定するstate
   const[show, setShow] = useState(false);
+  
+  // モーダルウィンドウを開く
   const openModal = () => {
     setShow(true);
   };
@@ -35,9 +40,6 @@ function Record({record}) {
                 <button className="deleteButton" onClick={handleDelete}><DeleteIcon/></button>
               </div>
             </li>
-            {/* <li className="recordListItem"><button className="updateButton" onClick = {openModal} >編集</button></li>
-            <li className="recordListItem"><button className="deleteButton" onClick={handleDelete}>削除</button></li> */}
-
         </ul>
         <ModalEdit show = {show} setShow ={setShow} record = {record} />
     </div>

@@ -11,7 +11,7 @@ function ModalEdit({show, setShow, record}) {
     const sets = useRef();
     const reps = useRef();
 
-    // recordの持つ日付をフォーマット
+    // recordの持つ日付をdefaultValueで扱える形(yyyy-mm-dd)に変換
     const dateObj = record.date.toDate();
     const year = dateObj.getFullYear();
     const month = dateObj.getMonth() + 1;
@@ -49,11 +49,11 @@ function ModalEdit({show, setShow, record}) {
 
     
 
-
+  // showの値によって表示/非表示を決定
   if(show) {
       return (
         <div id = "overlay" onClick = {closeModal} >
-            <div id="content" onClick={(e) => e.stopPropagation()} >
+            <div id="content" onClick={(e) => e.stopPropagation()} >{/* 上記のクリックイベントの伝搬を止める */}
                 <h1 className="editTitle">編集する</h1>
                 <form className="editRecordWrapper" onSubmit={(e) => handleSubmit(e)}>
                     <input type="date" className="dateInput" required ref = {date} defaultValue = {formatDate}/>

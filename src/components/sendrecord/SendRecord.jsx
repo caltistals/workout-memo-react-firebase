@@ -4,13 +4,14 @@ import firebase from 'firebase/compat/app';
 import "./SendRecord.css";
 
 function SendRecord() {
+    // 各inputのvalueへのuseRef
     const date = useRef();
     const type = useRef();
     const weight = useRef();
     const sets = useRef();
     const reps = useRef();
     
-
+    // ドキュメントを作成して送信
     const handleSubmit = async (e) => {
         const uid = auth.currentUser.uid;
         const collection = db.collection("record");
@@ -20,7 +21,7 @@ function SendRecord() {
         // フォームの値をnewDocIdのドキュメントに追加する
         await  collection.doc(newDocId).set({
             uid,
-            date: firebase.firestore.Timestamp.fromDate(new Date(date.current.value)),
+            date: firebase.firestore.Timestamp.fromDate(new Date(date.current.value)), //FirestoreのTimestampに変換する
             type: type.current.value,
             weight: weight.current.value, 
             sets: sets.current.value,

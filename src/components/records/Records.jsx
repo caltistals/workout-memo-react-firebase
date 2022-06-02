@@ -4,7 +4,10 @@ import Record from '../record/Record';
 // import {Scrollbars} from "rc-scrollbars";
 
 function Records() {
+    // ユーザーごとのドキュメント(record)を保持するstate
     const [records, setRecords] = useState([]);
+
+    // ログイン中のユーザーのドキュメント(record)を取得する
     useEffect(() => {
         db.collection("record")
         .where("uid", "==", auth.currentUser.uid)

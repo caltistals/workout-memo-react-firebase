@@ -5,8 +5,8 @@ import "./Login.css";
 
 function Login() {
     const signInWithGoogle = async(e) => {
-        const provider = new firebase.auth.GoogleAuthProvider();
-        await auth.signInWithPopup(provider);
+        const provider = new firebase.auth.GoogleAuthProvider(); // Googleプロバイダオブジェクトのインスタンスを生成
+        await auth.signInWithPopup(provider); // ポップアップでログイン
     };
   return (
     <div className="login">

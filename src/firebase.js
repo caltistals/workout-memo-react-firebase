@@ -19,6 +19,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
+// Firebaseのfirestoreとauthを取得
 const db = firebaseApp.firestore();
 const auth = firebaseApp.auth();
 
