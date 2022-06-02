@@ -1,0 +1,101 @@
+* {
+    text-decoration: none;
+}
+
+.topbarContainer{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items:  center;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0px 5px 16px -10px rgba(0,0,0,0.6);  
+    text-decoration: none;
+    color:#41428b;
+}
+
+
+.topbarLeft {
+    flex: 1;
+}
+
+.logo{
+    font-size: 24px;
+    
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+
+.topbarCenter {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    color:#41428b;
+}
+
+.homeMenu {
+    
+    display: flex;
+    margin-right: 50px;
+    cursor: pointer;
+    color:#41428b;
+    border-radius: 10px;
+}
+
+.homeMenu:hover{
+    background-color: aliceblue;
+}
+
+.recordMenu {
+    display: flex;
+    margin-right: 50px;
+    cursor: pointer;
+    color:#41428b;
+    border-radius: 10px;
+}
+
+.recordMenu:hover{
+    background-color: aliceblue;
+}
+
+
+
+.topbarRight {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logout {
+    margin-right: 15px;
+}
+
+.is-active {
+    background-color: aliceblue;
+    display: flex;
+    margin-right: 50px;
+    cursor: pointer;
+    color:#41428b;
+    border-radius: 10px;
+}
+
+.logoutButton {
+    padding :1px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    color:#41428b;
+    font-weight: 700;
+}
+
+.logoutButton:hover {
+    background-color: aliceblue;
+    
+}
+
+

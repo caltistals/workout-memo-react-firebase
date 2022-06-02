@@ -1,0 +1,59 @@
+.recordWrapper {
+    box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.6);
+    margin: auto;
+    background-color: white;
+    width: 60%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.recordList {
+    display: flex;
+    list-style:none;
+    width: 100%;
+    
+}
+
+.recordListItem {
+    flex: 1;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.updateButton {
+    border-radius: 12px;
+    padding: auto;
+    border: 1px;
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+    border: 2px solid darkgreen;
+}
+.updateButton:hover{
+    background: #fff;
+    color: darkgreen;
+}
+
+.deleteButton {
+    border-radius: 12px;
+    padding: auto;
+    background-color:crimson;
+    border: 2px solid crimson;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.deleteButton:hover{
+    background-color: #fff;
+    color:crimson;
+}
+
+
+
