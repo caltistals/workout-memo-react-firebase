@@ -28,8 +28,21 @@ function Record({record}) {
 
   return (
     <div className = "recordWrapper">
-        <ul className="recordList">
-            <li className="recordListItem">{dateString} </li>
+        <div className='dateAndType'>
+          <span className='dateString'>{dateString}</span>
+          <span className="recordType">{record.type}</span>
+        </div>
+        <div className="detail">
+          <span>{record.weight} kg</span>
+          <span>{record.sets} set</span>
+          <span>{record.reps} rep</span>
+        </div>
+        <div className='buttons'>
+            <button className="updateButton" onClick = {openModal} ><EditIcon style ={{fontSize:"16px"}}/></button>
+            <button className="deleteButton" onClick={handleDelete}><DeleteIcon style ={{fontSize:"16px"}}/></button>
+        </div>
+        {/* <ul className="recordList">
+            <p className="recordListItem">{dateString} </p>
             <li className="recordListItem">種目: {record.type} </li>
             <li className="recordListItem">重量: {record.weight} kg</li>
             <li className="recordListItem">{record.sets} セット</li>
@@ -40,7 +53,7 @@ function Record({record}) {
                 <button className="deleteButton" onClick={handleDelete}><DeleteIcon/></button>
               </div>
             </li>
-        </ul>
+        </ul> */}
         <ModalEdit show = {show} setShow ={setShow} record = {record} />
     </div>
   )

@@ -10,9 +10,7 @@ function Topbar() {
 
   return (
     <div className="topbarContainer">
-        <div className="topbarLeft">
-            <span className="logo">Workout Memo</span>
-        </div>
+        <h3 className="logo">Workout memo</h3>
         <div className="topbarCenter">
           <NavLink exact to = "/" className = {({isActive}) => isActive ? "is-active": "homeMenu"}>
                 <HomeIcon/>ホーム

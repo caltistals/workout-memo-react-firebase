@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { auth, db } from '../../firebase';
 import Record from '../record/Record';
+import "./Records.css"
 // import {Scrollbars} from "rc-scrollbars";
 
 function Records() {
@@ -18,7 +19,7 @@ function Records() {
     }, [])
   return (
 
-      <div className = "rcds">
+      <div className = "rooo">
           {records.map((record) => (
               <Record record = {record} key = {record.id}/>
           ))}

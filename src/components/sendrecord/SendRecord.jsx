@@ -39,14 +39,14 @@ function SendRecord() {
 
   return (
     <div className="sendRecord">
-        <h1>ワークアウトを記録</h1>
+        <h2>ワークアウトを記録</h2>
         <form className="sendRecordWrapper" onSubmit={(e) => handleSubmit(e)}>
             <input type="date" className="dateInput" required ref = {date} />
             <input type="text" className="typeInput" required ref = {type} placeholder="種目"  />
             <input type="number" className="weightInput" required ref = {weight}  placeholder="重量(kg)" />
             <input type="number" className="setsInput" required ref = {sets} placeholder="セット数"/>
             <input type="number" className="repsInput" required ref = {reps} placeholder="レップ数" />
-            <button className="sendButton" type = "submit">記録</button>
+            <br /><button className="sendButton" type = "submit">記録</button>
         </form>
     </div>
   )
