@@ -7,7 +7,7 @@ import "./Records.css"
 function Records() {
     // ユーザーごとのドキュメント(record)を保持するstate
     const [records, setRecords] = useState([]);
-
+    console.log("Records");
     // ログイン中のユーザーのドキュメント(record)を取得する
     useEffect(() => {
         db.collection("record")

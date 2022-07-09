@@ -5,7 +5,7 @@ import { db } from '../../firebase';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 
-function Record({record}) {
+const Record = React.memo(({record}) => {
   // ドキュメント(record)の日付を変換
   const date = record.date.toDate();
   const dateString = date.toLocaleDateString();
@@ -41,22 +41,9 @@ function Record({record}) {
             <button className="updateButton" onClick = {openModal} ><EditIcon style ={{fontSize:"16px"}}/></button>
             <button className="deleteButton" onClick={handleDelete}><DeleteIcon style ={{fontSize:"16px"}}/></button>
         </div>
-        {/* <ul className="recordList">
-            <p className="recordListItem">{dateString} </p>
-            <li className="recordListItem">種目: {record.type} </li>
-            <li className="recordListItem">重量: {record.weight} kg</li>
-            <li className="recordListItem">{record.sets} セット</li>
-            <li className="recordListItem">{record.reps} レップ</li>
-            <li className="recordListItem">
-              <div className='buttons'>
-                <button className="updateButton" onClick = {openModal} ><EditIcon /></button>
-                <button className="deleteButton" onClick={handleDelete}><DeleteIcon/></button>
-              </div>
-            </li>
-        </ul> */}
         <ModalEdit show = {show} setShow ={setShow} record = {record} />
     </div>
   )
-}
+})
 
 export default Record
