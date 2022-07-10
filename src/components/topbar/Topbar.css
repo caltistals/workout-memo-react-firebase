@@ -17,9 +17,6 @@
 }
 
 
-.topbarLeft {
-    flex: 1;
-}
 
 .logo{
     font-size: 24px;
@@ -29,15 +26,15 @@
 }
 
 
-.topbarCenter {
-    flex: 2;
-    display: flex;
-    align-items: center;
-    color:#41428b;
+
+.topbarNav li {
+    list-style: none;
+     display: inline-block;
+    margin-right: 0px;
 }
 
 .homeMenu {
-    
+    padding:5px;
     display: flex;
     margin-right: 50px;
     cursor: pointer;
@@ -50,6 +47,7 @@
 }
 
 .recordMenu {
+    padding:5px;
     display: flex;
     margin-right: 50px;
     cursor: pointer;
@@ -77,6 +75,7 @@
 .is-active {
     background-color: aliceblue;
     display: flex;
+    padding: 5px;
     margin-right: 50px;
     cursor: pointer;
     color:#41428b;
@@ -84,7 +83,7 @@
 }
 
 .logoutButton {
-    padding :1px;
+    padding :5px;
     border: none;
     border-radius: 5px;
     background-color: white;
