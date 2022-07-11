@@ -2,8 +2,7 @@
 React + Firebaseで作成した、ワークアウトを記録するためのWebアプリケーションです。
 
 # アプリ URL
-
-
+（新規タブで開いて頂くようお願いいたします）
 https://workout-memo-21266.firebaseapp.com
 
 # デモ
