@@ -20,8 +20,9 @@ https://workout-memo-21266.firebaseapp.com
 ![Workout-memo-record-delete](https://user-images.githubusercontent.com/106266114/171672319-a20fc7f8-feb6-4c48-b81b-bc4cf72db45c.gif)
 
 # 更新履歴
-- **2022/07/09** 画面のスタイリングの改善（デプロイ済み）
-- **2022/07/10** Recordコンポーネントのメモ化・Todoコンポーネントの追加（未実装）・Topbarのスタイリングの調整（デプロイ済み）
+- **2022/07/09** 画面のスタイリングの改善（デプロイ済）
+- **2022/07/10** Recordコンポーネントのメモ化（デプロイ済）・Todoコンポーネントの追加（未実装）・Topbarのスタイリングの調整（デプロイ済）
+- **2022/07/12** ModalEditのスタイリングの調整（デプロイ済）
 
 # 使用技術
 - **React**: フロントエンド部分で使用

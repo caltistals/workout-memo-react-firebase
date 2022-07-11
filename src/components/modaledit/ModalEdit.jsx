@@ -53,8 +53,8 @@ function ModalEdit({show, setShow, record}) {
   if(show) {
       return (
         <div id = "overlay" onClick = {closeModal} >
-            <div id="content" onClick={(e) => e.stopPropagation()} >{/* 上記のクリックイベントの伝搬を止める */}
-                <h1 className="editTitle">編集する</h1>
+            <div id="modalEdit" onClick={(e) => e.stopPropagation()} >{/* 上記のクリックイベントの伝搬を止める */}
+                <h2 className="editTitle">記録を編集</h2>
                 <form className="editRecordWrapper" onSubmit={(e) => handleSubmit(e)}>
                     <input type="date" className="dateInput" required ref = {date} defaultValue = {formatDate}/>
                     <input type="text" className="typeInput" required ref = {type} placeholder="種目" defaultValue= {record.type} />
