@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Topbar.css"
 import HomeIcon from '@mui/icons-material/Home';
+import LogoutIcon from '@mui/icons-material/Logout';
 import AddAlarmIcon from '@mui/icons-material/AddAlarm';
 import { NavLink } from 'react-router-dom';
 import { auth } from "../../firebase.js"
@@ -14,7 +15,7 @@ function Topbar() {
         <ul className="topbarNav">
           <li>
             <NavLink exact to = "/" className = {({isActive}) => isActive ? "is-active": "homeMenu"}>
-                  <HomeIcon/>ホーム
+                  <HomeIcon/>
             </NavLink>
           </li>
           {/* <li>
@@ -25,7 +26,7 @@ function Topbar() {
         </ul>
         <div className="topbarRight">
           <div className="logout">
-            <button className='logoutButton' onClick={() => auth.signOut()} >ログアウト</button>
+            <button className='logoutButton' onClick={() => auth.signOut()} ><LogoutIcon /></button>
           </div>
         </div>
     </div>

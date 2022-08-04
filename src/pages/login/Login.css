@@ -13,6 +13,7 @@
     height: 70%;
     /* background-color: green; */
     display: flex;
+    flex-direction: column;
 }
 
 .loginLeft, .loginRight {
