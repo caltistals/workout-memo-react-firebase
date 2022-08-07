@@ -7,7 +7,6 @@ import "./Records.css"
 function Records() {
     // ユーザーごとのドキュメント(record)を保持するstate
     const [records, setRecords] = useState([]);
-    console.log("Records");
     // ログイン中のユーザーのドキュメント(record)を取得する
     useEffect(() => {
         db.collection("record")
@@ -17,6 +16,12 @@ function Records() {
             setRecords(snapshot.docs.map((doc) => doc.data())); //取り出した内容をrecordsにセットする
           })
     }, [])
+    // console.log(records);
+    // var today = new Date();
+    // var x = -7;
+    // var xDay = new Date();
+    // xDay.setDate(today.getDate() + x);
+    // console.log(xDay);
   return (
 
       <div className = "rooo">
